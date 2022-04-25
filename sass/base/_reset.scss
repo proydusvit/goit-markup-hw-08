@@ -1,0 +1,31 @@
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+
+.nav__item:last-child {
+    margin: 0;
+}
+
+.advantage__item:last-child {
+    margin: 0;
+}
+.services__item:last-child {
+    margin: 0;
+}
+.team__item:last-child {
+    margin: 0;
+}
+.address__item:last-child {
+    margin: 0;
+}
+.butten__item--portfolio:last-child {
+    margin: 0;
+}

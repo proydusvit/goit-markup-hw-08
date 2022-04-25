@@ -1,0 +1,55 @@
+
+@import"./reset";
+body {
+    font-family: var(--main-font);
+    color: var(--main-color);
+    background-color: var(--secondary-color);
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}  
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+* {
+    box-sizing: border-box;
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.link {
+    position: relative;
+    font-weight: 500;
+    line-height: 1.17;
+    color: var(--main-color);
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    display: block;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link:hover,
+.link:focus {
+    color: var(--hover-logo-btn-color);
+}
+.title {
+    text-align: center;
+    margin-bottom: 50px;
+
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.166;
+}
+.contacts {
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--maint-text-color);
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+}

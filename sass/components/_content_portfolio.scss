@@ -1,0 +1,99 @@
+.main__portfilio {
+    background-color: var(--secondary-color);
+}
+
+
+
+
+.content {
+
+&__list {
+display: flex;
+flex-wrap: wrap;
+margin-right: -30px;
+    }
+&__name {
+    margin-bottom: 4px;
+
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--main-color);
+}
+&__text {
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--maint-text-color);
+}
+
+&__item a {
+    text-decoration: none;
+}
+
+&__item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+&__item:nth-child(3n) {
+    margin-right: 0;
+}
+
+&__item:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+}
+
+&__link {
+    display: block;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__link:hover {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),0px 4px 4px 0px rgba(0, 0, 0, 0.06),0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+  
+
+&__text--background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    transform: translateY(100%);
+    left: 0;
+    bottom: 0;
+    display: flex;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+
+    background: rgba(33, 150, 243, 0.9);
+    color: var(--secondary-color);
+
+    padding: 63px 24px;
+}
+
+&__box {
+    position: relative;
+    overflow: hidden;
+}
+
+&__box:hover &__text--background {
+    transform: translateY(0);
+}
+}
+.content--bottom {
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+}

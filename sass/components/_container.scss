@@ -1,0 +1,13 @@
+.container {
+    width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+
+&--header {
+    display: flex;
+    justify-content: space-between;
+}
+&--footer__link {
+    margin-right: 83px;
+}
+}

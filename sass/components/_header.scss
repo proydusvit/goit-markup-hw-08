@@ -1,0 +1,44 @@
+.header {
+    border-bottom: 1px solid #ececec;
+
+&__mail,
+&__tel {
+    fill: currentColor;
+    margin-right: 10px;
+}
+}
+
+.nav {
+    display: flex;
+
+
+&__list {
+    display: flex;
+    align-items: center;
+}
+
+
+&__link--current::after,
+&__link:hover::after {
+    position: absolute;
+    bottom: -33px;
+
+    content: '';
+    height: 4px;
+    width: 101%;
+    background-color: var(--hover-logo-btn-color);
+    border-radius: 2px;
+    display: block;
+}
+
+&__item {
+    margin-right: 50px;
+    padding-bottom: 32px;
+    padding-top: 32px;
+}
+
+&__link--current {
+    color: var(--hover-logo-btn-color);
+}
+
+}

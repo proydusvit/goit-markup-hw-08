@@ -1,0 +1,44 @@
+.advantage{
+
+&__list {
+
+    display: flex;
+    list-style-type: none;
+}
+
+&__title {
+    font-weight: bold;
+    line-height: 1.14;
+    margin-bottom: 10px;
+    width: 270px;
+    height: 16px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+&__item {
+    margin-right: 30px;
+}
+
+&__image {
+    height: 120px;
+    align-items: center;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--btn-portfolio);
+}
+
+&__svg {
+    width: 70px;
+    height: 70px;
+}
+
+&__text {
+    width: 270px;
+    height: 75px;
+
+    line-height: 1.71;
+    color: var(--maint-text-color);
+}
+}
