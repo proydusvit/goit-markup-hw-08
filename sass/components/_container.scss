@@ -1,11 +1,25 @@
 .container {
-    width: 1200px;
+    min-width: 100%;
     margin: auto;
-    padding: 0 15px;
+    padding: 0 15px; 
+  
 
+    @media screen and (min-width:768px){
+        width: 768px;
+        padding: 0 15px;
+
+        
+    }
+    @media screen and (min-width:1200px) {
+        width: 1200px;
+        padding: 0 15px;
+    
+    
+    }
 &--header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 &--footer__link {
     margin-right: 83px;

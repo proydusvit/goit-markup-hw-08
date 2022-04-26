@@ -1,8 +1,20 @@
 .header {
     border-bottom: 1px solid #ececec;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 21px;
+        padding-bottom: 21px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
 
 &__mail,
 &__tel {
+    
     fill: currentColor;
     margin-right: 10px;
 }
@@ -11,10 +23,17 @@
 .nav {
     display: flex;
 
+@media screen and (max-width: 767px) {
+    display: none;}
 
 &__list {
     display: flex;
     align-items: center;
+    padding: 0;
+   
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
 }
 
 
@@ -29,16 +48,30 @@
     background-color: var(--hover-logo-btn-color);
     border-radius: 2px;
     display: block;
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+        bottom: -35.5px;
+    }
+    @media screen and (min-width: 1200px) {
+        bottom: -33px;
+    }
 }
 
 &__item {
     margin-right: 50px;
-    padding-bottom: 32px;
-    padding-top: 32px;
+    // padding-bottom: 32px;
+    // padding-top: 32px;
+    padding: 0;
 }
 
 &__link--current {
     color: var(--hover-logo-btn-color);
 }
+&__list--contacts{
 
+    @media screen and (min-width: 768px) and (max-width:1200px)
+    {
+    display: block;
+    margin-left: 75px;
+    }
+}
 }

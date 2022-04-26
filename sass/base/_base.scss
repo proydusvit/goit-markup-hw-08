@@ -16,8 +16,12 @@ img {
     box-sizing: border-box;
 }
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+       }
 }
 .link {
     position: relative;
@@ -43,6 +47,8 @@ img {
     font-size: 36px;
     line-height: 1.166;
 }
+
+// contacts headre and footer
 .contacts {
     font-weight: 500;
     line-height: 1.17;
@@ -52,4 +58,12 @@ img {
     display: flex;
     text-align: center;
     align-items: center;
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+        margin-bottom: 10px;
+
+    }
+    
 }
+.ad{margin: 0;}
+
+

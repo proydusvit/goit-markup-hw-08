@@ -1,0 +1,51 @@
+.mobile_header__btn{
+    position: relative;
+
+    display: block;
+    width: 40px;
+    height: 40px;
+
+    background-color: transparent;
+    border: transparent;
+    outline: transparent;
+
+   padding: 0;
+   cursor: pointer;
+
+   z-index: 10;
+
+@media screen and (min-width: 768px) {
+    display: none;
+}
+  
+ 
+    &__open{
+        opacity: 1;
+      
+    }
+    &__open:hover{
+        fill:  rgba(33, 150, 243, 1);;
+    }
+&__open:focus {
+    fill: rgba(33, 150, 243, 1);
+    ;
+}
+    &__close{
+        opacity: 0;
+    }
+    &__close:hover {
+        fill: rgba(33, 150, 243, 1);
+        ;
+        &__close:focus {
+            fill: rgba(33, 150, 243, 1);
+            ;
+        }
+    }
+    
+}
+.mobile_header__btn.is-active .mobile_header__btn__open{
+    opacity: 0;
+}
+.mobile_header__btn.is-active .mobile_header__btn__close {
+    opacity: 1;
+}
