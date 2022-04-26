@@ -11,10 +11,13 @@
 
 &--first {
     display: flex;
-    margin-right: 93px;
+    // margin-right: 93px;
     @media screen and (min-width: 768px) and (max-width: 1200px) {
       margin-right: 88px;
     }
+    @media screen and  (min-width: 1200px) {
+        margin-right:0;
+      }
     
     // padding-top: 24px;
 }
