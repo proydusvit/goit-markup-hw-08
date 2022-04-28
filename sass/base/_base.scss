@@ -17,7 +17,7 @@ img {
 }
 .section {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
     @media screen and (min-width: 1200px) {
         padding-top: 94px;
         padding-bottom: 94px;
@@ -42,11 +42,21 @@ img {
 .title {
     text-align: center;
     margin-bottom: 50px;
-
+letter-spacing: 0.03em;
     font-weight: bold;
     font-size: 36px;
     line-height: 1.166;
-}
+    @media screen and (max-width:1199px) {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 33px;
+    
+        letter-spacing: 0.03em;
+
+        margin-bottom: 30px;
+    }
+    }
+
 
 // contacts headre and footer
 .contacts {
@@ -58,7 +68,7 @@ img {
     display: flex;
     text-align: center;
     align-items: center;
-    @media screen and (min-width: 768px) and (max-width: 1200px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-bottom: 10px;
 
     }

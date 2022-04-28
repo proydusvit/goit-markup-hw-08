@@ -16,12 +16,24 @@ li {
 
 .advantage__item:last-child {
     margin: 0;
+   
+}
+.advantage__item:nth-child(2n){
+@media screen and (max-width: 1199px) {
+    margin: 0;
+   
+}
+.advantage__text:nth-of-type(-n + 2) {
+    @media screen and (min-width:768px) and (max-width: 1199px) {
+        margin: 0;
+    }
+}
 }
 .services__item:last-child {
     margin: 0;
 }
 .team__item:last-child {
-    margin: 0;
+    margin-right: 0;
 }
 .address__item:last-child {
     margin: 0;
@@ -29,3 +41,9 @@ li {
 .butten__item--portfolio:last-child {
     margin: 0;
 }
+
+// .socials__list:last-child{
+// @media screen and (max-width: 1999px) {
+//     margin: 0;
+// }
+// }

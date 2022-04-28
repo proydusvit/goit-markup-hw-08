@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "normalize.scss"
+        "../sass/variables/normalize.scss"
     ],
     "names": [],
-    "file": "normalize.css"
+    "file": "normalize.min.css"
 }
