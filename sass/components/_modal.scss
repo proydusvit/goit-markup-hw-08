@@ -35,6 +35,10 @@
     max-width: 95%;
         
     }
+    @media screen and(min-width:768px) and(max-width:1199px) {
+    
+        max-width: 450px;
+    }
 
     // FORM
 &__label {
@@ -109,12 +113,11 @@
     margin-left: 12px;
     display: flex;
     align-items: center;
-    @media screen and (max-width:767px) {
-      display: block;
- 
+    @media screen and (max-width:1199px) {
+
     font-size: 12px;
     line-height: 14px;
- margin: 0;
+    margin: 0;
     
     
     }
@@ -134,7 +137,14 @@
     padding: 10px 55px;
     margin-top: 20px;
     margin-left: 121px;
+
+@media screen and (max-width:1199px) {
+    margin-left: auto;
+    margin-right: auto;
+  
 }
+}
+      
 
 &__img {
     position: absolute;
@@ -168,5 +178,4 @@
     background-position: center;
     background-origin: border-box;
 }
-}
-}
+}}
