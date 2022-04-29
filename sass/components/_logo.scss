@@ -5,6 +5,12 @@
     line-height: 1.17;
     color: var(--main-color);
     text-decoration: none;
+    @media screen and(max-width:767px) {
+        text-align: center;
+    }
+    @media screen and (min-width:768px) and (max-width:1199px) {
+       text-align: center;
+    }
 
 
 

@@ -23,5 +23,12 @@
 }
 &--footer__link {
     margin-right: 83px;
+    @media screen and(max-width:767px) {
+    margin: 0;
+    }
+    @media screen and (min-width:768px) and (max-width:1199px) {
+       margin: 0;
+    }
+
 }
 }

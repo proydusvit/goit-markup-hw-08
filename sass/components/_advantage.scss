@@ -36,8 +36,13 @@ flex-wrap: wrap;
 
 &__item {
     margin-right: 30px;
+    @media screen and (max-width:767px) {
+        margin-right: 0;
+    }
 
     }
+
+
 
 
 &__image {
