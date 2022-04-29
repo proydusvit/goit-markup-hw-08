@@ -12,6 +12,7 @@ pointer-events: none;
 transition: transform 500ms ease-in-out;
 
 &.is-open{
+   
     transform: translateX(0);
     visibility: visible;
     pointer-events:initial;
@@ -21,17 +22,21 @@ transition: transform 500ms ease-in-out;
 }
 .mobile{
     width: 100%;
+  
  
     padding: 48px 40px;
     z-index: 4;
 
    
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
 
     background-color: #FFFFFF;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04),
         0px 2px 4px rgba(0, 0, 0, 0.08),
         0px 1px 3px rgba(0, 0, 0, 0.16);
+}
+&-nav{
+    margin-bottom: 185px;
 }
 &-nav__item{
 
@@ -59,10 +64,8 @@ transition: transform 500ms ease-in-out;
 &-nav__link--current{
     color: #2196F3;
 }
-&-nav{
-    margin-bottom: 302px;
 
-}
+
 &-contacts__item--tel{
     font-weight: 500;
     font-size: 34px;
@@ -86,6 +89,7 @@ transition: transform 500ms ease-in-out;
     display: flex;
     flex-wrap: wrap;
   
+  
 }
 &-social__item{
     margin-right: 10px;
@@ -99,12 +103,13 @@ transition: transform 500ms ease-in-out;
 
     border-right:1px solid rgba(33, 33, 33, 0.2); 
     padding-right: 10px;
-
+    
     
 }
 &-social__link{
     text-decoration: none;
     color: #2196F3;
+   
 }
 &-social__item:last-child{
     border: 0;
@@ -122,8 +127,6 @@ transition: transform 500ms ease-in-out;
 &-social__item:last-child{
     margin: 0;
 }
-&-social{
-    margin-bottom: 48px;
-}
+
 }
 
