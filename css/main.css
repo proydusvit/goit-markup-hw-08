@@ -388,7 +388,7 @@ img {
   visibility: visible;
 }
 
-.backdrop .modal {
+.modal {
   z-index: 30;
   position: absolute;
   top: 50%;
@@ -402,24 +402,24 @@ img {
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  .backdrop .modal {
+  .modal {
     max-width: 450px;
   }
 }
 
 @media screen and (max-width: 479px) {
-  .backdrop .modal {
+  .modal {
     max-width: 95%;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .backdrop .modal {
+  .modal {
     max-width: 450px;
   }
 }
 
-.backdrop .modal__label {
+.modal__label {
   position: relative;
   font-weight: 400;
   font-size: 12px;
@@ -434,15 +434,15 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop .modal__label:hover {
+.modal__label:hover {
   fill: var(--hover-logo-btn-color);
 }
 
-.backdrop .modal__label:focus-within {
+.modal__label:focus-within {
   fill: var(--hover-logo-btn-color);
 }
 
-.backdrop .modal__text {
+.modal__text {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -452,7 +452,7 @@ img {
   margin-bottom: 12px;
 }
 
-.backdrop .modal__input {
+.modal__input {
   margin-top: 4px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -463,16 +463,16 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop .modal__input:hover {
+.modal__input:hover {
   border-color: var(--hover-logo-btn-color);
   cursor: pointer;
 }
 
-.backdrop .modalmodal__input:focus-within {
+.modalmodal__input:focus-within {
   border-color: var(--hover-logo-btn-color);
 }
 
-.backdrop .modal__textarea {
+.modal__textarea {
   margin-top: 4px;
   padding: 12px 15px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -480,7 +480,7 @@ img {
   margin-bottom: 20px;
 }
 
-.backdrop .modal__label--checkbox {
+.modal__label--checkbox {
   color: var(--maint-text-color);
   line-height: 1.71;
   margin-left: 12px;
@@ -489,26 +489,26 @@ img {
 }
 
 @media screen and (max-width: 1199px) {
-  .backdrop .modal__label--checkbox {
+  .modal__label--checkbox {
     font-size: 12px;
     line-height: 14px;
     margin: 0;
   }
 }
 
-.backdrop .modal__link {
+.modal__link {
   color: var(--hover-logo-btn-color);
   text-decoration: underline;
   margin-left: 4px;
 }
 
 @media screen and (max-width: 767px) {
-  .backdrop .modal__link {
+  .modal__link {
     margin: 0;
   }
 }
 
-.backdrop .modal__btn {
+.modal__btn {
   display: flex;
   padding: 10px 55px;
   margin-top: 20px;
@@ -516,19 +516,19 @@ img {
 }
 
 @media screen and (max-width: 1199px) {
-  .backdrop .modal__btn {
+  .modal__btn {
     margin-left: auto;
     margin-right: auto;
   }
 }
 
-.backdrop .modal__img {
+.modal__img {
   position: absolute;
   top: 53%;
   left: 15px;
 }
 
-.backdrop .modal__checkbox--span {
+.modal__checkbox--span {
   display: inline-block;
   width: 15px;
   height: 15px;
@@ -537,14 +537,20 @@ img {
   margin-right: 8px;
 }
 
-.backdrop .modal__checkbox {
+@media screen and (max-width: 479px) {
+  .modal__checkbox--span {
+    width: 20px;
+  }
+}
+
+.modal__checkbox {
   position: absolute;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
 
-.backdrop .modal__checkbox:checked + .backdrop .modal__checkbox--span {
+.modal__checkbox:checked + .modal__checkbox--span {
   border-color: transparent;
   border-radius: 2px;
   background-image: url("../images/sprite/icn.svg");

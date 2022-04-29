@@ -13,7 +13,7 @@
     visibility: visible;
 
 }
-
+}
 .modal {
     z-index: 30;
     position: absolute;
@@ -161,6 +161,10 @@
     border-radius: 2px;
 
     margin-right: 8px;
+    @media screen and(max-width:479px){
+        width: 20px;
+        
+    }
 }
 
 &__checkbox {
@@ -172,10 +176,11 @@
 }
 
 &__checkbox:checked+&__checkbox--span {
+    
     border-color: transparent;
     border-radius: 2px;
     background-image: url('../images/sprite/icn.svg');
     background-position: center;
     background-origin: border-box;
 }
-}}
+}
